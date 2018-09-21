@@ -29,4 +29,4 @@ sao sinchang/template-fastify-plugin my-project
 
 ## License
 
-MIT &copy; [sinchang](github.com/sinchang)
+Licensed under [MIT](./LICENSE)
