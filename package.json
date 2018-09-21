@@ -1,6 +1,6 @@
 {
   "name": "template-fastify-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scaffolding out a fastify plugin template",
   "repository": {
     "url": "sinchang/template-fastify-plugin",
