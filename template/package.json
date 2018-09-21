@@ -10,22 +10,26 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "test": "tap 'test.js'",
+    "test-ci": "tap 'test.js' --coverage-report=html",
     "lint": "standard | snazzy",
-    "unit": "tap test.js",
-    "test": "npm run lint && npm run unit",
-    "coverage": "tap test.js --cov --coverage-report=text-lcov --coverage-report=html",
-    "coveralls": "tap test.js --cov --coverage-report=text-lcov | coveralls"
+    "lint-ci": "standard",
+    "codecov": "codecov"
   },
+  "precommit": [
+    "lint",
+    "test"
+  ],
   "keywords": [
     "fastify"
   ],
   "devDependencies": {
-    "coveralls": "^3.0.0",
+    "codecov": "^3.1.0",
     "fastify": "^1.11.2",
     "pre-commit": "^1.2.2",
     "snazzy": "^8.0.0",
     "standard": "^12.0.1",
-    "tap": "^12.0.0"
+    "tap": "^12.0.1"
   },
   "dependencies": {
     "fastify-plugin": "^1.2.1"
